@@ -1,17 +1,10 @@
 ---
-  
-dash.register_page(
-    __name__,
-    name="Deploy a README.md with dashdown",
-    title="Dashdown example-Deploy a README.md",
-    description="Dash Labs documentation",
-    order=99,
-    layout=dashdown(
-        "pages/dashdown/README.md",        
-        side_by_side=True,
-        exec_code=True
-    ),
-)
+register_page:
+  path: "/home"
+  order: 2
+MarkdownAIO:
+  exec: True
+  side_by_side: True
 ---
 
 # Deploy a README.md file
